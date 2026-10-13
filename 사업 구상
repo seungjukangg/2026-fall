@@ -6,4 +6,6 @@ i=1
 while(i<10){
 if(i<5){print(x)
 }else{print(2*x)}
-
+numeric()
+character()
+isTRUE(x)
