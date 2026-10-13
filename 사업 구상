@@ -10,3 +10,6 @@ numeric()
 character()
 isTRUE(x)
 runif(n,a,b)
+rbinom
+rpoisson
+levels=c('a','b','c','d')
