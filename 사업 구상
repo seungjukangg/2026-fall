@@ -13,3 +13,4 @@ runif(n,a,b)
 rbinom
 rpoisson
 levels=c('a','b','c','d')
+일단 내일까지 총정리끝내고 기출 23년도꺼 하나 풀어보기 하자 
