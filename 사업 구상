@@ -14,4 +14,5 @@ rbinom
 rpoisson
 levels=c('a','b','c','d')
 
-dkdkdkdkdkdk
+header = TRUE
+head(5)
