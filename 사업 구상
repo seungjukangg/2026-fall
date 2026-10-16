@@ -1,18 +1,34 @@
-hmmm
-x
-x=c(1,2,3)
-x=0
-i=1
-while(i<10){
-if(i<5){print(x)
-}else{print(2*x)}
-numeric()
-character()
-isTRUE(x)
-runif(n,a,b)
-rbinom
-rpoisson
-levels=c('a','b','c','d')
+read.csv('finance.csv')
+my.data=read.csv('finance.csv')
+my.data=my.data[,-1]
+head(my.data)
+names(my.data)=c('Var1','Var2','Var3','Var4','Response')
+head(my.data)
+head(my.data, 3)
+dim(my.data)
+save(my.data,file='Q1.RData')
 
-header = TRUE
-head(5)
+attach(my.data)
+par(mfrow=c(1,3))
+hist(Var1, xlab='X1',main='Histogram of Q2')
+boxplot(Var2,main='Boxplot of Q2')
+boxplot(Var2,main='No outliers',range=3)
+
+min('Var2')
+min(Var2)
+which.min(Var2)
+
+tt=subset(my.data, Var1>=0 & Var2<0.1 & Reponse==1)
+mean(tt[,3])
+
+sequence=seq(2,397,5)
+sum(sqrt(sequence/100))
+sum=0
+for (i in -10:20){
+  sum=sum+exp(-(i)^2)
+  i=i+1}
+sum
+fct=function(x,m,s){
+  (1/(x*s*sqrt(2*pi)))*exp(-(log(x)-m)^2/(2*s^2))
+}
+fct(5,6,3)
