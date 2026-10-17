@@ -5,20 +5,6 @@ head(my.data)
 names(my.data)=c('Var1','Var2','Var3','Var4','Response')
 head(my.data)
 head(my.data, 3)
-dim(my.data)
-save(my.data,file='Q1.RData')
-
-attach(my.data)
-par(mfrow=c(1,3))
-hist(Var1, xlab='X1',main='Histogram of Q2')
-boxplot(Var2,main='Boxplot of Q2'))
-
-tt=subset(my.data, Var1>=0 & Var2<0.1 & Reponse==1)
-mean(tt[,3])
-
-sequence=seq(2,397,5)
-sum(sqrt(sequence/100))
-sum=0
 for (i in -10:20){
   sum=sum+exp(-(i)^2)
   i=i+1}
