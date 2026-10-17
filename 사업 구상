@@ -27,7 +27,8 @@ sum=0
 for (i in -10:20){
   sum=sum+exp(-(i)^2)
   i=i+1}
-sum
+sumrownames(y) = c("male", "female")
+colnames(y) = c("Seoul", "Tokyo", "Madison", "Chicago","LA")
 fct=function(x,m,s){
   (1/(x*s*sqrt(2*pi)))*exp(-(log(x)-m)^2/(2*s^2))
 }
